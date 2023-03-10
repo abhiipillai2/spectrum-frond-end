@@ -52,11 +52,25 @@ firebase.auth().onAuthStateChanged((firebaseUser) => {
 
         });
         //bill table
-        sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/1').then(responseData => {
+        // sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/1').then(responseData => {
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+        //     document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
 
-        });
+        // });
+
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
+
+
+
         //vi graph
         sendHttpRequest('GET', HTTP_ROOT + '/viTriger/' + httpTred + '/15').then(responseData => {
 

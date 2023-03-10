@@ -321,26 +321,26 @@ document.getElementById("unitHour").addEventListener('click', function() {
         selectNumber = 1
         sendHttpRequest('GET', HTTP_ROOT + '/hourUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
 
         });
     } else if (select == 2) {
         selectNumber = 5
         sendHttpRequest('GET', HTTP_ROOT + '/hourUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     } else if (select == 3) {
         selectNumber = 12
         sendHttpRequest('GET', HTTP_ROOT + '/hourUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     } else if (select == 4) {
         selectNumber = 15
         sendHttpRequest('GET', HTTP_ROOT + '/hourUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     }
 });
@@ -356,20 +356,20 @@ document.getElementById("unitDay").addEventListener('click', function() {
         selectNumber = 1
         sendHttpRequest('GET', HTTP_ROOT + '/dayUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
 
         });
     } else if (select == 2) {
         selectNumber = 3
         sendHttpRequest('GET', HTTP_ROOT + '/dayUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     } else if (select == 3) {
         selectNumber = 7
         sendHttpRequest('GET', HTTP_ROOT + '/dayUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     }
 });
@@ -385,14 +385,14 @@ document.getElementById("unitMonth").addEventListener('click', function() {
         selectNumber = 1
         sendHttpRequest('GET', HTTP_ROOT + '/monthUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
 
         });
     } else if (select == 2) {
         selectNumber = 3
         sendHttpRequest('GET', HTTP_ROOT + '/monthUnit/' + httpTred + '/' + selectNumber).then(responseData => {
 
-            document.getElementById("unitSoket").textContent = responseData.value.toFixed(2) + " UNITS"
+            document.getElementById("unitSoket").textContent = responseData.value.toFixed(5) + " UNITS"
         });
     }
 });
@@ -405,31 +405,63 @@ document.getElementById("billHour").addEventListener('click', function() {
     let selectNumber = 0
     if (select == 1) {
         selectNumber = 1
-        sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
 
-        });
     } else if (select == 2) {
         selectNumber = 5
-        sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     } else if (select == 3) {
         selectNumber = 12
-        sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     } else if (select == 4) {
         selectNumber = 15
-        sendHttpRequest('GET', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     }
 });
+
 //***************************************************************************** */
 //***************************************************************************** */
 //bill day
@@ -439,23 +471,46 @@ document.getElementById("billDay").addEventListener('click', function() {
     let selectNumber = 0
     if (select == 1) {
         selectNumber = 1
-        sendHttpRequest('GET', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber, {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
 
-        });
     } else if (select == 2) {
         selectNumber = 3
-        sendHttpRequest('GET', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber, {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     } else if (select == 3) {
         selectNumber = 7
-        sendHttpRequest('GET', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/dayBill/' + httpTred + '/' + selectNumber, {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     }
 });
 //***************************************************************************** */
@@ -467,17 +522,32 @@ document.getElementById("billMonth").addEventListener('click', function() {
     let selectNumber = 0
     if (select == 1) {
         selectNumber = 1
-        sendHttpRequest('GET', HTTP_ROOT + '/monthBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/monthBill/' + httpTred + '/' + selectNumber, {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
 
-        });
     } else if (select == 2) {
         selectNumber = 3
-        sendHttpRequest('GET', HTTP_ROOT + '/monthBill/' + httpTred + '/' + selectNumber).then(responseData => {
+        sendHttpRequest('POST', HTTP_ROOT + '/monthBill/' + httpTred + '/' + selectNumber, {
+            //JSON FILE FOR PUSH
+            provider_id: 'KSEB',
+            
+    
+        }).then(responseData => {
+    
+                document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
+    
+            });	
 
-            document.getElementById("billSoket").textContent = responseData.value.toFixed(2) + " INR"
-        });
+
     }
 });
 
