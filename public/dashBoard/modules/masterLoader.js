@@ -405,7 +405,7 @@ document.getElementById("billHour").addEventListener('click', function() {
     let selectNumber = 0
     if (select == 1) {
         selectNumber = 1
-        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber, {
             //JSON FILE FOR PUSH
             provider_id: 'KSEB',
             
@@ -419,7 +419,7 @@ document.getElementById("billHour").addEventListener('click', function() {
 
     } else if (select == 2) {
         selectNumber = 5
-        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber, {
             //JSON FILE FOR PUSH
             provider_id: 'KSEB',
             
@@ -433,7 +433,7 @@ document.getElementById("billHour").addEventListener('click', function() {
 
     } else if (select == 3) {
         selectNumber = 12
-        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber, {
             //JSON FILE FOR PUSH
             provider_id: 'KSEB',
             
@@ -447,7 +447,7 @@ document.getElementById("billHour").addEventListener('click', function() {
 
     } else if (select == 4) {
         selectNumber = 15
-        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/1', {
+        sendHttpRequest('POST', HTTP_ROOT + '/hourBill/' + httpTred + '/' + selectNumber, {
             //JSON FILE FOR PUSH
             provider_id: 'KSEB',
             
