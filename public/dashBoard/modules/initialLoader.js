@@ -2,9 +2,9 @@
 //
 firebase.auth().onAuthStateChanged((firebaseUser) => {
     if (firebaseUser) {
-        let authData = JSON.stringify(firebaseUser.email);
+        let authData = firebaseUser.email;
         //for sending http id 
-        localStorage.setItem("eMail", authData)
+        localStorage.setItem("eMail",authData)
         id = localStorage.getItem("eMail");
         //HTTP request for current user details
         sendHttpRequest('GET', HTTP_ROOT + '/currentAuth/' + id).then(responseData => {

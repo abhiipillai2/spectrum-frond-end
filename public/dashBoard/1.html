@@ -24,17 +24,28 @@
         <!--------connectin-part-->
         <div id="connectDiv" class="connect-div">
             <h4 id="close2">x</h4>
-            <h2 id="connectedId">connected</h2>
-            <input type="text" id="hardWareId" value="eknxx" class="inp" />
             <div id="connectBtn" class="connect-btn">
-                <h3 id="connect">connect</h3>
+              <h3 id="connect">Add new device</h3>
+          </div>
+            <div class="present-device" id="presetDevice">
+              <h5 style="margin-top: 10px;margin-left: 20px;">Connected Devices</h5>
+              <div class="list-2" id="list2">
+                <ul>
+
+                </ul>
+              </div>
             </div>
+            <input type="text" id="hardWareId" value="hardware id" class="inp" />
+            <input style="margin-top: 20px;" type="text" id="sensorName" value="sensor name" class="sensor-name" />
+            <div id="connectBtn2" class="connect-btn-2">
+              <h3 id="connect2">connect</h3>
+          </div>
             <div id="disconnectBtn" class="disconnect-btn">
                 <h3 id="disConnect">disconnect</h3>
             </div>
-            <p>
+            <!-- <p>
                After connectng dvice you need to refreh the dashbord console to view the data. Make sure that device is in on state and having good internet connectivity. Also note secret hardawre id mentioned on top of hardware. If yo accidentally disconnect your device your data will not lost.
-            </p>
+            </p> -->
         </div>
         <!--------account-part-->
         <div id="acountDiv" class="account-div">
@@ -172,6 +183,7 @@
                       class="fas fa-plug connect-icon"
                       title="connection indicatator"
                     ></i>
+                    <h5 style="text-align: right;margin-right: 200px;margin-top: -20px;" id="presentDevice">No device connected</h5>
                   </div>
                 </div>
               </div>

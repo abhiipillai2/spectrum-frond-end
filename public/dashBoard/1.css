@@ -482,10 +482,10 @@ body {
 .connect-div {
     display: none;
     position: fixed;
-    width: 300px;
-    height: 380px;
+    width: 600px;
+    height: 400px;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid #ececec;
     border-radius: 10px;
@@ -495,14 +495,40 @@ body {
 }
 
 .inp {
-    display: block;
+    display: none;
+    margin-top: 200px;
     z-index: 200;
     width: 250px;
     height: 30px;
-    margin-left: 28px;
+    margin-left: 30px;
     border: 2px solid #ececec;
 }
 
+.sensor-name{
+    display: none;
+    z-index: 200;
+    margin-top: 200px;
+    width: 250px;
+    height: 30px;
+    margin-left: 30px;
+    border: 2px solid #ececec;
+}
+.connect-btn-2{
+    display: none;
+    margin-top: -40px;
+    margin-left: 330px;
+    width: 230px;
+    height: 40px;
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.connect-btn-2 h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
 .connect-div h2 {
     display: none;
     text-align: center;
@@ -518,8 +544,8 @@ body {
 
 .connect-btn {
     display: block;
-    margin-top: 40px;
-    margin-left: 36px;
+    margin-top: 20px;
+    margin-left: 190px;
     width: 230px;
     height: 40px;
     border: 2px solid #ececec;
@@ -538,9 +564,42 @@ body {
     color: white;
 }
 
+.connect-btn-2:hover {
+    background-color: #7bd7c7;
+    color: white;
+}
+
+.present-device{
+    display: block;
+    margin-top: 0px;
+    height: 100px;
+}
+.list-2{
+    margin-top: 0px;
+    cursor: pointer;
+    margin-left:20px;
+}
+.list-2 li{
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid #ececec;
+    border-right: -40px;
+    list-style: none;
+
+}
+
+.list-2 li:hover {
+    background-color: #7bd7c7;
+    color: white;
+}
+.setup-title{
+    display: block;
+}
+
 .disconnect-btn {
     display: none;
-    margin-top: 40px;
+    margin-top: 250px;
     margin-left: 36px;
     width: 230px;
     height: 40px;
@@ -570,7 +629,20 @@ body {
     text-align: justify;
 }
 
+button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin-left: 36px; */
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: #7bd7c7;
+}
 /*vi-curve*/
 
 .vi-div {
