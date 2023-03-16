@@ -195,6 +195,50 @@
             A power monitoring dashboard can display various important metrics and data related to energy consumption and power usage. Here are some of the key components that a power monitoring dashboard.
           </p>
         </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div id="dayMatrix">
+            <div class="col-md-2">
+              <h1>Today</h1>
+              <div class="day-power-matrix">
+                <h2 id="matrixDayPower">00 watt</h2>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="day-unit-matrix">
+                <h2 id="matrixDayUnit">00 units</h2>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="day-tarrif-matrix">
+                <h2 id="matrixDayTarrif">00 INR</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div id="dayMatrix">
+            <div class="col-md-2">
+              <h1>This Month</h1>
+              <div class="day-power-matrix">
+                <h2 id="matrixMonthPower">00 Watt</h2>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="day-unit-matrix">
+                <h2 id="matrixMonthUnit">00 units</h2>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="day-tarrif-matrix">
+                <h2 id="matrixMonthTarrif">00 INR</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div id="module1" class="module-1">
           <h1>power monitor</h1>
           <di id="listBar" class="list-bar">
@@ -343,4 +387,5 @@
   <script src="modules/httpFunction.js"></script>
   <script src="modules/initialLoader.js"></script>
   <script src="modules/masterLoader.js"></script>
+  <script src="modules/matrixLoader.js"></script>
 </html>

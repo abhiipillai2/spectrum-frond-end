@@ -180,7 +180,7 @@ document.getElementById("connect2").addEventListener('click', function() {
 
                 const list = document.querySelector(".list-2")
                 let sensorTag = document.createElement("li")
-                let name =document.createTextNode(ar[i].sensor_name + "---  "+ ar[i].hardware_id)
+                let name =document.createTextNode(ar[i].sensor_name + " ( "+ ar[i].hardware_id + " ) ")
                 list.appendChild(sensorTag)
                 sensorTag.appendChild(name)
 

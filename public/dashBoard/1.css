@@ -756,3 +756,52 @@ button:hover {
     width: 875px;
     height: 360px;
 }
+
+/* day matrix */
+
+.day-power-matrix{
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    z-index: 99999999;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.day-power-matrix h2{
+    text-align: center;
+    padding-top: 25%;
+}
+
+.day-unit-matrix{
+    margin-top: 28%;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    z-index: 99999999;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.day-unit-matrix h2{
+    text-align: center;
+    padding-top: 25%;
+}
+
+.day-tarrif-matrix{
+    margin-top: 28%;
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    z-index: 99999999;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.day-tarrif-matrix h2{
+    text-align: center;
+    padding-top: 25%;
+}
