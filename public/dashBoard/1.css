@@ -805,3 +805,81 @@ button:hover {
     text-align: center;
     padding-top: 25%;
 }
+
+/* load curve */
+.load-curve{
+    position: relative;
+    width: 1150px;
+    height: 580px;
+    background-color: white;
+    margin-left: 30px;
+    border: 2px solid;
+    border-color: #ececec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.option-btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin-left: 36px; */
+    width: 200px;
+    height: 40px;
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.option-btn h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.option-btn:hover {
+    background-color: #7bd7c7;
+}
+
+.get-data-btn{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* margin-left: 36px; */
+    width: 200px;
+    height: 40px;
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.get-data-btn h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.get-data-btn:hover {
+    background-color: #7bd7c7;
+}
+.compare-mode{
+    display: none;
+    position: fixed;
+    width: 1500px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    z-index: 2000000000000000;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.compare-mode h2 {
+    display: block;
+    color: BLACK;
+    float: right;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}

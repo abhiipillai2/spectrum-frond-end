@@ -63,6 +63,7 @@ document.getElementById("connectionManegement").addEventListener('click', functi
                 document.querySelector(".connect-icon").style.color = ' #7bd7c7'
                 let hwFlag = 0
                 localStorage.setItem("hwflag", hwFlag)
+                document.querySelector(".connect-div").style.display = 'none'
 
                 // console.log(hadrwareId)
             };
@@ -191,6 +192,7 @@ document.getElementById("connect2").addEventListener('click', function() {
                     let hwFlag = 0
                     localStorage.setItem("hwflag", hwFlag)
                     document.querySelector(".connect-icon").style.color = ' #7bd7c7'
+                    document.querySelector(".connect-div").style.display = 'none'
                     // console.log(hadrwareId)
                 };
 
